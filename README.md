@@ -6,7 +6,7 @@ Built with React, Vite, and TailwindCSS.
 
 ## Live
 
-[tanmay-portfolio.vercel.app](https://tanmay-portfolio.vercel.app)
+[https://tanmay-portfolio-weld.vercel.app](https://tanmay-portfolio-weld.vercel.app)
 
 ## Tech Stack
 
