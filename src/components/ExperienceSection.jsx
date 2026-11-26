@@ -23,7 +23,7 @@ const experiences = [
     company: "VISMA Lab, IIT Bhubaneswar",
     location: "Bhubaneswar, India",
     period: "10 Aug 2026 — 15 Oct 2026",
-    certLink: null,
+    certLink: "https://drive.google.com/file/d/1RucCYNtbwncWH9k9YXDvd7yqKUTi0qN0/view?usp=sharing",
     lorLink: null,
     highlights: [
       "Annotated 1,000 images and built a zero-shot semantic image search engine using CLIP (ViT-B/32) in a 512-d latent space (0.28–0.38+ cosine scores).",
