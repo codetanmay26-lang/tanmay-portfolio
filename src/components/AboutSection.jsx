@@ -25,21 +25,22 @@ export const AboutSection = () => {
           {/* Bio + Education */}
           <div className="lg:col-span-2 space-y-6 text-left">
             <h3 className="text-xl sm:text-2xl font-semibold">
-              CS Undergrad | AI Research Intern | 6x Hackathon Winner
+              CS Undergrad | AI &amp; CV Research Intern | 6x Hackathon Winner
             </h3>
 
             <p className="text-muted-foreground">
               I'm a B.Tech Computer Science student at Jaypee Institute of
               Information Technology, Noida (2024-2028), passionate about
-              building intelligent systems at the intersection of AI and web
-              development.
+              building intelligent systems at the intersection of AI, Computer
+              Vision, and full-stack development.
             </p>
 
             <p className="text-muted-foreground">
-              I interned at Solid State Physics Laboratory (DRDO), where I built
-              an AI electronics assistant using FastAPI and local LLMs, developed
-              a multimodal RAG pipeline with ChromaDB, and received a Letter of
-              Recommendation from Scientist 'E' for technical excellence.
+              I interned at SSPL, DRDO where I built a 6-module multimodal RAG
+              pipeline (Granite 97M + ChromaDB + GLM-4.5V) and at VISMA Lab,
+              IIT Bhubaneswar where I built a zero-shot semantic image search
+              engine with CLIP. I hold a Letter of Recommendation from DRDO for
+              independently delivering the full pipeline.
             </p>
 
             <div className="bg-secondary/30 rounded-lg p-4 space-y-2">
@@ -96,8 +97,8 @@ export const AboutSection = () => {
               <div className="text-left">
                 <h4 className="font-semibold text-lg">AI & Machine Learning</h4>
                 <p className="text-muted-foreground text-sm">
-                  Developing AI-powered systems using Gemini API, RAG
-                  pipelines, vision-language models, and local LLMs.
+                  Building multimodal RAG pipelines, semantic search engines,
+                  and AI-powered systems with PyTorch, CLIP, and Gemini API.
                 </p>
               </div>
             </div>
@@ -108,10 +109,10 @@ export const AboutSection = () => {
                 <Briefcase className="h-6 w-6 text-primary" />
               </div>
               <div className="text-left">
-                <h4 className="font-semibold text-lg">Blockchain Development</h4>
+                <h4 className="font-semibold text-lg">Computer Vision</h4>
                 <p className="text-muted-foreground text-sm">
-                  Building decentralized apps with Aptos blockchain,
-                  Move smart contracts, and SHA-256 verification.
+                  Zero-shot image search, vision-language models, and
+                  image annotation using CLIP, OpenCV, and HuggingFace.
                 </p>
               </div>
             </div>

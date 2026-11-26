@@ -11,7 +11,7 @@ const achievements = [
     icon: FileText,
     title: "DRDO Letter of Recommendation",
     description:
-      "Awarded by Scientist 'E' at SSPL, DRDO for technical excellence and exceptional performance during AI research internship.",
+      "Awarded by Scientist 'E' at SSPL, DRDO for independently designing and delivering a full 6-module multimodal RAG pipeline — grounding Gemini 2.5 Flash answers in ChromaDB-indexed datasheet chunks across text, images, and tables.",
     link: "https://drive.google.com/file/d/1utzvg4wfvtR7e3sTrJ1Kpm3m9x0B_EWo/view?usp=sharing",
   },
 ];

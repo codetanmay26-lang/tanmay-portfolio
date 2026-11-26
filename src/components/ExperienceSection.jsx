@@ -8,13 +8,29 @@ const experiences = [
     period: "02 Jun 2026 — 14 Jul 2026",
     certLink:
       "https://drive.google.com/file/d/1tmeFDkdeJwO1O0t7mk0iBC-pUNbJ0waw/view?usp=drive_link",
+    lorLink:
+      "https://drive.google.com/file/d/1utzvg4wfvtR7e3sTrJ1Kpm3m9x0B_EWo/view?usp=sharing",
     highlights: [
-      "Built an AI electronics assistant using FastAPI and local LLMs for circuit analysis and automation (~3.2K LOC).",
-      "Developed a ChromaDB-based RAG pipeline for internal lab datasheets, processing 3 modalities (text, tables, images) into 36 AI-enriched chunks for grounded retrieval with reduced hallucinations.",
-      "Integrated vision-language and simulation systems (Qwen2.5-VL + Ngspice) to interpret circuit schematics and convert natural language into executable SPICE netlists.",
-      "Awarded a Letter of Recommendation from Scientist 'E', DRDO-SSPL for technical excellence and exceptional internship performance.",
+      "Built a 6-module multimodal RAG pipeline (Granite 97M + ChromaDB) indexing datasheets into 36 enriched chunks (text, 63 images, 15 tables) with MMR retrieval (k=10, fetch_k=20).",
+      "Converted tables & diagrams into searchable text via GLM-4.5V (1,091 → 1,375 avg chars), enabling visual datasheet content retrieval via text-based vector search.",
+      "Designed chunk-health scoring (0–100, 25 pts per modality) with confidence-scored web fallback, grounding Gemini 2.5 Flash answers in source chunks to eliminate hallucinations.",
+      "Awarded a Letter of Recommendation for technical excellence and independently delivering the full RAG pipeline.",
     ],
-    tags: ["FastAPI", "ChromaDB", "Qwen2.5-VL", "Ngspice", "RAG", "LLMs"],
+    tags: ["GLM-4.5V", "ChromaDB", "IBM Granite 97M", "Gemini 2.5 Flash", "RAG", "MMR Retrieval"],
+  },
+  {
+    role: "Research Intern – Computer Vision & AI",
+    company: "VISMA Lab, IIT Bhubaneswar",
+    location: "Bhubaneswar, India",
+    period: "10 Aug 2026 — 15 Oct 2026",
+    certLink: null,
+    lorLink: null,
+    highlights: [
+      "Annotated 1,000 images and built a zero-shot semantic image search engine using CLIP (ViT-B/32) in a 512-d latent space (0.28–0.38+ cosine scores).",
+      "Precomputed a unit-normalised 1,000×512 embedding matrix (2 MB) for <25 ms retrieval via a single BLAS dot product.",
+      "Engineered a CUDA/CPU-adaptive inference pipeline, cutting memory by >60% and eliminating ~600 MB model reloads per query.",
+    ],
+    tags: ["CLIP", "PyTorch", "HuggingFace", "Streamlit", "Computer Vision", "Semantic Search"],
   },
 ];
 
@@ -92,17 +108,30 @@ export const ExperienceSection = () => {
                     ))}
                   </div>
 
-                  {exp.certLink && (
-                    <a
-                      href={exp.certLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-sm text-primary hover:underline shrink-0"
-                    >
-                      <ExternalLink className="h-3.5 w-3.5" />
-                      View Certificate
-                    </a>
-                  )}
+                  <div className="flex flex-wrap gap-3 shrink-0">
+                    {exp.certLink && (
+                      <a
+                        href={exp.certLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-sm text-primary hover:underline"
+                      >
+                        <ExternalLink className="h-3.5 w-3.5" />
+                        View Certificate
+                      </a>
+                    )}
+                    {exp.lorLink && (
+                      <a
+                        href={exp.lorLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-sm text-primary hover:underline"
+                      >
+                        <ExternalLink className="h-3.5 w-3.5" />
+                        View LOR
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>

@@ -8,7 +8,7 @@ const projects = [
       "6x Hackathon Winner. Role-based healthcare system with 4 user roles, Tesseract.js OCR for 80%+ prescription extraction, AI-powered lab report analysis via Gemini API, and a proactive risk scoring system.",
     image: "/projects/project1.png",
     tags: ["React (Vite)", "TailwindCSS", "Gemini API", "Firebase"],
-    demoUrl: "https://health-sync-vert.vercel.app/",
+    demoUrl: "https://healthsync.tanmaysharma.xyz/",
     githubUrl: "https://github.com/codetanmay26-lang/health-sync.git",
   },
   {
@@ -18,7 +18,7 @@ const projects = [
       "Decentralized system using Aptos blockchain and Move smart contracts for secure prescription issuance. SHA-256 hash validation with Firebase off-chain storage for 100% tamper detection and 50+ verified transactions.",
     image: "/projects/project2.png",
     tags: ["Aptos", "JavaScript", "Node.js", "Firebase"],
-    demoUrl: "https://aptosrx.onrender.com/",
+    demoUrl: "https://aptosrx.tanmaysharma.xyz/",
     githubUrl: "https://github.com/codetanmay26-lang/aptosrx.git",
   },
 ];

@@ -1,30 +1,35 @@
-import { Code, Database, Globe, Cpu, Wrench } from "lucide-react";
+import { Code, Database, Globe, Cpu, Wrench, BarChart2 } from "lucide-react";
 
 const skillGroups = [
   {
     title: "Languages",
     icon: Code,
-    skills: ["C/C++", "Python", "Java", "JavaScript", "R"],
-  },
-  {
-    title: "Frontend",
-    icon: Globe,
-    skills: ["ReactJS", "HTML5", "CSS3", "TailwindCSS"],
-  },
-  {
-    title: "Backend",
-    icon: Database,
-    skills: ["Node.js", "REST APIs", "Firebase", "FastAPI"],
+    skills: ["C/C++", "Python", "Java", "JavaScript"],
   },
   {
     title: "AI / ML",
     icon: Cpu,
-    skills: ["Gemini API", "RAG Pipelines", "AI-Based Analytics", "LLMs", "Qwen2.5-VL"],
+    skills: ["PyTorch", "TensorFlow", "Computer Vision", "RAG", "Multimodal AI", "CLIP"],
+  },
+  {
+    title: "APIs & Services",
+    icon: Globe,
+    skills: ["Gemini API", "HuggingFace", "REST APIs"],
+  },
+  {
+    title: "Web Development",
+    icon: Globe,
+    skills: ["ReactJS", "Node.js", "FastAPI", "HTML5", "CSS3", "TailwindCSS"],
+  },
+  {
+    title: "Data Analytics",
+    icon: BarChart2,
+    skills: ["SQL", "Data Cleaning", "Data Analysis", "Data Visualization"],
   },
   {
     title: "Tools & Databases",
     icon: Wrench,
-    skills: ["MySQL", "Git", "GitHub", "Vercel", "Render", "ChromaDB"],
+    skills: ["MySQL", "Firebase", "ChromaDB", "OpenCV", "Git", "GitHub"],
   },
 ];
 
