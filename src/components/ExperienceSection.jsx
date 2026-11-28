@@ -2,6 +2,20 @@ import { Briefcase, Calendar, MapPin, ExternalLink } from "lucide-react";
 
 const experiences = [
   {
+    role: "Research Intern – Computer Vision & AI",
+    company: "VISMA Lab, IIT Bhubaneswar",
+    location: "Bhubaneswar, India",
+    period: "10 Aug 2026 — 15 Oct 2026",
+    certLink: "https://drive.google.com/file/d/1RucCYNtbwncWH9k9YXDvd7yqKUTi0qN0/view?usp=sharing",
+    lorLink: null,
+    highlights: [
+      "Annotated 1,000 images and built a zero-shot semantic image search engine using CLIP (ViT-B/32) in a 512-d latent space (0.28–0.38+ cosine scores).",
+      "Precomputed a unit-normalised 1,000×512 embedding matrix (2 MB) for <25 ms retrieval via a single BLAS dot product.",
+      "Engineered a CUDA/CPU-adaptive inference pipeline, cutting memory by >60% and eliminating ~600 MB model reloads per query.",
+    ],
+    tags: ["CLIP", "PyTorch", "HuggingFace", "Streamlit", "Computer Vision", "Semantic Search"],
+  },
+  {
     role: "AI Research Intern",
     company: "Solid State Physics Laboratory (SSPL), DRDO",
     location: "Delhi, India",
@@ -17,20 +31,6 @@ const experiences = [
       "Awarded a Letter of Recommendation for technical excellence and independently delivering the full RAG pipeline.",
     ],
     tags: ["GLM-4.5V", "ChromaDB", "IBM Granite 97M", "Gemini 2.5 Flash", "RAG", "MMR Retrieval"],
-  },
-  {
-    role: "Research Intern – Computer Vision & AI",
-    company: "VISMA Lab, IIT Bhubaneswar",
-    location: "Bhubaneswar, India",
-    period: "10 Aug 2026 — 15 Oct 2026",
-    certLink: "https://drive.google.com/file/d/1RucCYNtbwncWH9k9YXDvd7yqKUTi0qN0/view?usp=sharing",
-    lorLink: null,
-    highlights: [
-      "Annotated 1,000 images and built a zero-shot semantic image search engine using CLIP (ViT-B/32) in a 512-d latent space (0.28–0.38+ cosine scores).",
-      "Precomputed a unit-normalised 1,000×512 embedding matrix (2 MB) for <25 ms retrieval via a single BLAS dot product.",
-      "Engineered a CUDA/CPU-adaptive inference pipeline, cutting memory by >60% and eliminating ~600 MB model reloads per query.",
-    ],
-    tags: ["CLIP", "PyTorch", "HuggingFace", "Streamlit", "Computer Vision", "Semantic Search"],
   },
 ];
 
